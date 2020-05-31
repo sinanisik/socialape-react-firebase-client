@@ -20,14 +20,16 @@ const styles = (theme) => ({
   ...theme.spread,
   submitButton: {
     position: "relative",
+    float: "right",
+    marginTop: 10,
   },
   progressSpinner: {
     position: "absolute",
   },
   closeButton: {
     position: "absolute",
-    left: "90%",
-    top: "5%",
+    left: "91%",
+    top: "6%",
   },
 });
 
@@ -129,6 +131,7 @@ class PostScream extends Component {
 
 PostScream.propTypes = {
   postScream: PropTypes.func.isRequired,
+  clearErrors: PropTypes.func.isRequired,
   UI: PropTypes.object.isRequired,
 };
 
